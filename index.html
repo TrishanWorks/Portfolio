@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trishan Sanmugam | Portfolio</title>
+<meta name="description" content="Portfolio of Trishan Sanmugam, IT diploma student at UCSI University. Web design and ethical hacking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#top">Trishan</a>
+<a class="l" href="#about">About</a><a class="l" href="#languages">Languages</a><a class="l" href="#tools">Tools</a><a class="l" href="#photos">Photography</a>
+<a class="pill" href="#contact">Let's chat</a>
+</nav></div></header>
+
+<main id="top">
+<div class="herowrap"><canvas id="globe" aria-hidden="true"></canvas>
+<div class="wrap hero">
+<div>
+<div class="badge">Looking for an internship</div>
+<h1>I build websites and study how to secure them.</h1>
+<p class="sub">Trishan A/L Sanmugam, IT diploma student at <a class="lnk" href="https://www.ucsiuniversity.edu.my" target="_blank" rel="noopener">UCSI</a> University.</p>
+<div class="btns"><a class="pill" href="#tools">Try my tools</a><a class="ghost" href="https://github.com/TrishanWorks" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+<div class="portrait"><img src="trish.jpeg" alt="Portrait of Trishan Sanmugam" onerror="this.style.visibility='hidden'"></div>
+</div></div>
+
+<section id="about"><div class="wrap two">
+<p class="passage">I'm an Information Technology student with two interests that pull in opposite directions: making websites people enjoy using, and learning how attackers get into them. <span>Designing and breaking turn out to be the same skill seen from opposite sides. I'm after an internship where I can build real things and learn how they fail.</span></p>
+<dl>
+<div><dt>Age</dt><dd id="age"></dd></div>
+<div><dt>Studying</dt><dd>Diploma in Information Technology</dd></div>
+<div><dt>University</dt><dd><a class="lnk" href="https://www.ucsiuniversity.edu.my" target="_blank" rel="noopener">UCSI</a> University</dd></div>
+<div><dt>Interests</dt><dd>Web design, ethical hacking, photography</dd></div>
+</dl>
+</div></section>
+
+<section id="languages"><div class="wrap">
+<div class="head"><h2>Languages</h2></div>
+<div class="langs" id="langs"></div>
+</div></section>
+
+<section id="tools"><div class="wrap">
+<div class="head"><h2>Tools I built</h2><p class="cap">Three small security programs that run in this page. Drag any 3D view to turn it. Nothing you type leaves your browser.</p></div>
+<div class="tools">
+<div class="tabs" role="tablist">
+<button role="tab" aria-selected="true" data-t="0">Hash generator<small>Text in, fingerprint out.</small></button>
+<button role="tab" aria-selected="false" data-t="1">Password checker<small>How long a guess would take.</small></button>
+<button role="tab" aria-selected="false" data-t="2">Caesar wheel<small>Shift letters around a ring.</small></button>
+</div>
+<div>
+<div class="panel on" id="p0">
+<div class="ctl"><div><label for="hin">Text</label><textarea id="hin" rows="3">hello world</textarea></div>
+<div class="seg" id="halg"><button aria-pressed="true">SHA-256</button><button aria-pressed="false">SHA-1</button><button aria-pressed="false">SHA-512</button></div>
+<div class="out hex" id="hout"></div></div>
+<div class="stage"><canvas id="c0"></canvas><p>Each bar is one byte of the hash. Change a single letter and watch every bar move.</p></div>
+</div>
+<div class="panel" id="p1">
+<div class="ctl"><div><label for="pin">Password</label><input id="pin" type="text" autocomplete="off" spellcheck="false" placeholder="Type to test"></div>
+<div class="meter" id="meter"><i></i><i></i><i></i><i></i><i></i></div>
+<dl class="stats"><div><dt>Strength</dt><dd id="s1">-</dd></div><div><dt>Entropy</dt><dd id="s2">-</dd></div><div><dt>Time to guess</dt><dd id="s3">-</dd></div></dl>
+<div class="out" id="pout"></div></div>
+<div class="stage"><canvas id="c1"></canvas><p>One bar per character. Blue is lowercase, gold is uppercase, white is a digit, coral is a symbol.</p></div>
+</div>
+<div class="panel" id="p2">
+<div class="ctl"><div><label for="cin">Message</label><textarea id="cin" rows="3">Meet at the library at noon</textarea></div>
+<div class="step"><button id="cm" aria-label="Decrease shift">-</button><b id="cv">3</b><button id="cp" aria-label="Increase shift">+</button></div>
+<div class="seg" id="cmode"><button aria-pressed="true">Encrypt</button><button aria-pressed="false">Decrypt</button></div>
+<div class="out" id="cout"></div></div>
+<div class="stage"><canvas id="c2" tabindex="0" aria-label="Cipher wheel. Drag or use arrow keys to change the shift."></canvas><p>Drag the inner ring, use the buttons, or press the arrow keys.</p></div>
+</div>
+</div>
+</div>
+</div></section>
+
+<section id="photos"><div class="wrap">
+<div class="head"><h2>Photography</h2><p class="cap">Away from the screen I shoot cars and landscapes, usually in whatever light is left at the end of the day.</p></div>
+<div class="shots">
+<figure><img src="screenshot1.jpeg" alt="Photograph by Trishan" loading="lazy" onerror="this.style.visibility='hidden'"></figure>
+<figure><img src="screenshot2.jpeg" alt="Photograph by Trishan" loading="lazy" onerror="this.style.visibility='hidden'"></figure>
+<figure><img src="screenshot3.jpeg" alt="Photograph by Trishan" loading="lazy" onerror="this.style.visibility='hidden'"></figure>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="head"><h2>Find me online</h2><p class="cap">Open to internship offers and to talking shop.</p></div>
+<div class="soc">
+<a href="https://github.com/TrishanWorks" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+<a href="https://www.linkedin.com/in/trishan-sanmugam-007a65356" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+<a href="https://www.instagram.com/fym_shan/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+<a href="https://open.spotify.com/user/Trishan_Shanzz" target="_blank" rel="noopener" aria-label="Spotify" title="Spotify"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M7 9.5c3-1 7-.8 10 1M7.5 12.8c2.5-.7 5.5-.5 8 .9M8 16c2-.5 4.2-.3 6 .7"/></svg></a>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<pre class="ascii" aria-hidden="true"> _____ ____  ___ ____  _   _    _    _   _ 
+|_   _|  _ \|_ _/ ___|| | | |  / \  | \ | |
+  | | | |_) || |\___ \| |_| | / _ \ |  \| |
+  | | |  _ < | | ___) |  _  |/ ___ \| |\  |
+  |_| |_| \_\___|____/|_| |_/_/   \_\_| \_|</pre>
+<div class="row"><span class="muted">Trishan A/L Sanmugam</span><a href="https://github.com/TrishanWorks" target="_blank" rel="noopener">Made by TrishanWorks</a></div>
+</div></footer>
+
+<script>
+const $=id=>document.getElementById(id),calm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const seg=(el,cb)=>el.querySelectorAll('button').forEach((b,i)=>b.onclick=()=>{el.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));cb(b,i)});
+(()=>{const b=new Date(2007,10,30),n=new Date();let a=n.getFullYear()-b.getFullYear();if(n<new Date(n.getFullYear(),10,30))a--;$('age').textContent=a+' (born 30 November 2007)'})();
+/* languages */
+$('langs').innerHTML=[['Python','python','Python'],['JavaScript','javascript','javascript'],['HTML','html5','html'],['CSS','css3','css'],['C','c','C_Programming'],['C++','cplusplus','cpp'],['Java','java','java'],['Ruby','ruby','ruby']]
+.map(([n,i,r])=>`<a class="lang" href="https://www.reddit.com/r/${r}/" target="_blank" rel="noopener" aria-label="${n}"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${i}/${i}-plain.svg" alt="${n}" onerror="this.style.display='none'"><span>${n}</span></a>`).join('');
+/* 3D helpers */
+const V={ax:.55,ay:0,w:0,h:0,s:40,cy:.5};
+function pr(x,y,z){let c=Math.cos(V.ay),s=Math.sin(V.ay),x1=x*c+z*s,z1=-x*s+z*c;c=Math.cos(V.ax);s=Math.sin(V.ax);const y1=y*c-z1*s,z2=y*s+z1*c,k=5/(5+z2);return[V.w/2+x1*V.s*k,V.h*V.cy+y1*V.s*k,z2,k]}
+function fit(c){const r=c.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);if(c.width!==Math.round(r.width*d)||c.height!==Math.round(r.height*d)){c.width=Math.round(r.width*d);c.height=Math.round(r.height*d)}const x=c.getContext('2d');x.setTransform(d,0,0,d,0,0);x.clearRect(0,0,r.width,r.height);V.w=r.width;V.h=r.height;return x}
+const E=[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];
+function bar(x,px,pz,hh,col){const hw=.3,P=[];for(const[dx,dz,y]of[[-1,-1,0],[1,-1,0],[1,1,0],[-1,1,0],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]])P.push(pr(px+dx*hw,-y*hh,pz+dz*hw));
+ x.beginPath();[4,5,6,7].forEach((i,j)=>j?x.lineTo(P[i][0],P[i][1]):x.moveTo(P[i][0],P[i][1]));x.closePath();x.fillStyle='rgba('+col+',.16)';x.fill();
+ x.strokeStyle='rgba('+col+',.85)';x.lineWidth=1;x.beginPath();E.forEach(([a,b])=>{x.moveTo(P[a][0],P[a][1]);x.lineTo(P[b][0],P[b][1])});x.stroke()}
+const sceneList=[];(function tick(){sceneList.forEach(f=>f());requestAnimationFrame(tick)})();
+function drag(c,o){let d=null;c.onpointerdown=e=>{d=e.clientX;o.k=0;c.setPointerCapture(e.pointerId);c.style.cursor='grabbing'};c.onpointermove=e=>{if(d!==null){o.a+=(e.clientX-d)*.01;d=e.clientX}};c.onpointerup=()=>{d=null;c.style.cursor='grab'}}
+/* hero globe */
+(()=>{const c=$('globe'),N=520,P=[];let mx=0,tx=0,rot=0;for(let i=0;i<N;i++){const y=1-2*(i+.5)/N,r=Math.sqrt(1-y*y),a=i*2.399963;P.push([r*Math.cos(a),y,r*Math.sin(a),i%11==0])}
+ addEventListener('pointermove',e=>tx=e.clientX/innerWidth-.5);
+ const fills=['rgba(243,243,243,.1)','rgba(243,243,243,.25)','rgba(243,243,243,.45)','rgba(243,243,243,.7)'],gold='rgba(201,163,90,.8)';
+ sceneList.push(()=>{if(c.getBoundingClientRect().bottom<0)return;const x=fit(c);mx+=(tx-mx)*.05;rot+=calm?0:.0045;V.ax=.35;V.ay=rot*.02+mx*1.2;const big=V.w>900;V.cy=big?.5:.82;V.s=Math.min(V.h*(big?.5:.45),V.w*.2*(big?1.2:1.9));
+ const ox=big?V.w*.2:0,B=[[],[],[],[],[]];P.forEach(p=>{const q=pr(p[0]*2.2,p[1]*2.2,p[2]*2.2),l=Math.min(3,Math.max(0,Math.floor((1-q[2]/2.2)*2)));B[p[3]&&l>1?4:l].push(q)});
+ B.forEach((a,l)=>{x.fillStyle=l==4?gold:fills[l];a.forEach(q=>x.fillRect(q[0]+ox-.7,q[1]-.7,1.5,1.5))})})})();
+/* tabs */
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected',x===b));document.querySelectorAll('.panel').forEach((p,i)=>p.classList.toggle('on',i==b.dataset.t))});
+/* hash */
+const H={a:'SHA-256',cur:new Array(64).fill(0),tgt:new Array(64).fill(0),o:{a:.6,k:0}};
+async function hash(){const d=new TextEncoder().encode($('hin').value);try{const u=new Uint8Array(await crypto.subtle.digest(H.a,d)),hx=[...u].map(x=>x.toString(16).padStart(2,'0')).join('');$('hout').innerHTML=hx.match(/.{1,8}/g).map(s=>'<b>'+s+'</b> ').join('');H.tgt=[...u].map(x=>x/255);H.o.k=1}catch(e){$('hout').textContent='Hashing needs a secure context (https or a local file).'}}
+$('hin').oninput=hash;seg($('halg'),b=>{H.a=b.textContent;hash()});hash();
+(()=>{const c=$('c0');drag(c,H.o);sceneList.push(()=>{if(!c.offsetParent)return;const x=fit(c);H.o.k*=.94;H.o.a+=(calm?0:.004)+H.o.k*.05;V.ay=H.o.a;V.ax=.55;V.cy=.6;
+ const n=H.tgt.length,cols=8,rows=n/cols;V.s=Math.min(V.w/(cols*1.1),V.h/(rows*.9+3),44);
+ for(let i=0;i<n;i++){H.cur[i]+=(H.tgt[i]-H.cur[i])*.1;const v=H.cur[i];bar(x,((i%cols)-(cols-1)/2)*.8,(Math.floor(i/cols)-(rows-1)/2)*.8,.15+v*2,[123+78*v|0,140+23*v|0,255-165*v|0].join())}})})();
+/* password */
+const common=['password','123456','qwerty','abc123','letmein','admin','welcome','iloveyou','111111','monkey','dragon'],PW={h:[],o:{a:.5,k:0}},PC=['123,140,255','201,163,90','243,243,243','255,122,107'];
+$('pin').oninput=()=>{const p=$('pin').value,m=[...document.querySelectorAll('#meter i')];
+ PW.h=[...p].slice(0,28).map(ch=>/[a-z]/.test(ch)?[26,0]:/[A-Z]/.test(ch)?[26,1]:/\d/.test(ch)?[10,2]:[32,3]);PW.o.k=1;
+ if(!p){m.forEach(i=>i.style.background='');['s1','s2','s3'].forEach(i=>$(i).textContent='-');$('pout').textContent='';return}
+ let pool=0;if(/[a-z]/.test(p))pool+=26;if(/[A-Z]/.test(p))pool+=26;if(/\d/.test(p))pool+=10;if(/[^a-zA-Z0-9]/.test(p))pool+=32;
+ let bits=p.length*Math.log2(pool);const weak=common.some(c=>p.toLowerCase().includes(c));if(weak)bits=Math.min(bits,20);if(/^(.)\1+$/.test(p))bits=Math.min(bits,10);
+ const s=Math.pow(2,bits)/2/1e10,t=s<1?'under a second':s<60?Math.round(s)+' seconds':s<3600?Math.round(s/60)+' minutes':s<86400?Math.round(s/3600)+' hours':s<3.15e7?Math.round(s/86400)+' days':s<3.15e9?Math.round(s/3.15e7)+' years':'centuries';
+ const lv=bits<28?0:bits<40?1:bits<60?2:bits<80?3:4;m.forEach((i,k)=>i.style.background=k<=lv?'#c9a35a':'');
+ $('s1').textContent=['Very weak','Weak','Fair','Strong','Very strong'][lv];$('s2').textContent=Math.round(bits)+' bits';$('s3').textContent=t;
+ $('pout').textContent=weak?'Contains a common password. Estimate assumes 10 billion guesses a second.':'Estimate assumes 10 billion guesses a second.'};
+(()=>{const c=$('c1');drag(c,PW.o);const cur=[];sceneList.push(()=>{if(!c.offsetParent)return;const x=fit(c);PW.o.k*=.94;PW.o.a+=(calm?0:.003)+PW.o.k*.03;V.ay=PW.o.a;V.ax=.5;V.cy=.65;const n=Math.max(PW.h.length,1);V.s=Math.min(44,V.w/(n*.7+2));
+ for(let i=0;i<28;i++)cur[i]=(cur[i]||0)+((PW.h[i]?PW.h[i][0]:0)/32-(cur[i]||0))*.15;
+ PW.h.forEach((h,i)=>bar(x,(i-(PW.h.length-1)/2)*.7,0,.1+cur[i]*2.6,PC[h[1]]))})})();
+/* caesar */
+const C={s:3,cur:3,mode:1};
+function caesar(){const s=C.s*C.mode;$('cv').textContent=C.s;$('cout').textContent=$('cin').value.replace(/[a-z]/gi,c=>{const b=c<='Z'?65:97;return String.fromCharCode((c.charCodeAt(0)-b+s%26+26)%26+b)})}
+$('cin').oninput=caesar;seg($('cmode'),(b,i)=>{C.mode=i?-1:1;caesar()});
+const setS=v=>{C.s=((Math.round(v)-1)%25+25)%25+1;caesar()};$('cm').onclick=()=>setS(C.s-1);$('cp').onclick=()=>setS(C.s+1);caesar();
+(()=>{const c=$('c2'),T=Math.PI*2/26;let d=null,last=0;
+ const ang=e=>{const r=c.getBoundingClientRect();return Math.atan2((e.clientY-r.top-r.height*.5)/Math.cos(.95),e.clientX-r.left-r.width/2)};
+ c.onpointerdown=e=>{d=ang(e);c.setPointerCapture(e.pointerId)};c.onpointerup=()=>d=null;
+ c.onpointermove=e=>{if(d===null)return;const a=ang(e);let df=a-d;if(df>Math.PI)df-=2*Math.PI;if(df<-Math.PI)df+=2*Math.PI;last+=df/T;d=a;const w=Math.trunc(last);if(w){setS(C.s+w);last-=w}};
+ c.onkeydown=e=>{if(e.key=='ArrowRight'||e.key=='ArrowUp')setS(C.s+1);if(e.key=='ArrowLeft'||e.key=='ArrowDown')setS(C.s-1)};
+ sceneList.push(()=>{if(!c.offsetParent)return;const x=fit(c);C.cur+=(C.s-C.cur)*.18;V.ax=.95;V.ay=0;V.cy=.5;V.s=Math.min(V.w/5.4,V.h/4.4);x.textAlign='center';x.textBaseline='middle';
+ [[2,0,'rgba(156,156,156,.9)'],[1.35,C.cur,'rgba(201,163,90,1)']].forEach(([r,off,col],k)=>{x.strokeStyle='rgba(71,71,71,.9)';x.beginPath();for(let i=0;i<=60;i++){const q=pr(Math.cos(i/60*6.2832)*(r+.38),0,Math.sin(i/60*6.2832)*(r+.38));i?x.lineTo(q[0],q[1]):x.moveTo(q[0],q[1])}x.stroke();
+ x.fillStyle=col;for(let i=0;i<26;i++){const a=(i-(k?off:0))*T-Math.PI/2,q=pr(Math.cos(a)*r,0,Math.sin(a)*r);x.font=(11*q[3]).toFixed(1)+'px IBM Plex Mono,monospace';x.fillText(String.fromCharCode(65+i),q[0],q[1])}});
+ const a=pr(0,0,-2.55),b=pr(0,0,-2.2);x.strokeStyle='#c9a35a';x.lineWidth=2;x.beginPath();x.moveTo(a[0],a[1]);x.lineTo(b[0],b[1]);x.stroke();x.lineWidth=1;
+ const m=pr(0,0,0);x.fillStyle='#f3f3f3';x.font='400 26px IBM Plex Mono,monospace';x.fillText(C.s,m[0],m[1])})})();
+</script>
+</body>
+</html>
